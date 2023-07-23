@@ -1,0 +1,130 @@
+/* @import '~mdb-ui-kit/css/mdb.min.css'; */
+
+/* *{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+html {
+    overflow-x: initial !important;
+}
+
+html {
+    scrollbar-width: normal;
+    scrollbar-color: #777 #555;
+}
+
+html::-webkit-scrollbar {
+    width: 1vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #7775;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #5555;
+}
+
+html::-webkit-scrollbar-track:hover {
+    background-color: #555;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+
+body {
+    /* background: black; */
+
+    /* background-image: url('../src/assets/bg_images/Lovely-Vintage-Rose-Flower-Wallpaper.jpg'); */
+    /* background: #E5D1FA */
+    /* background-image: url('../src/assets/bg_images/lavender.webp');
+    background-size: cover; */
+}
+
+h1 {
+    /* font-family: 'Fredericka the Great', cursive;
+    font-family: 'Mynerve', cursive;
+    font-family: 'Parisienne', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Redacted Script', cursive;
+    font-family: 'Shadows Into Light', cursive; */
+    font-family: 'Cinzel Decorative', cursive;
+    /* padding-top: 80px;
+    padding-bottom: 50px; */
+    /* text-align: center; */
+    color: white;
+    text-align:center;
+}
+
+h2{
+    font-family: 'Sacramento', cursive;
+    text-align:center;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* hr {
+    color: '#000000';
+    background-color: '#FFFFFF';
+    height: 5;
+    border-color: '#000000';
+} */
+
+h3 {
+    font-family: 'Alegreya', serif;
+    color: white;
+    text-align:center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.LinedText {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.LinedText::before,
+.LinedText::after {
+    content: '';
+    flex: 1;
+
+
+    border-color: 0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(169, 83, 255),
+        0 0 82px rgb(169, 83, 255),
+        0 0 92px rgb(169, 83, 255),
+        0 0 102px rgb(169, 83, 255),
+        0 0 151px rgb(169, 83, 255);
+
+    border-bottom: 1px solid;
+}
+
+.LineTextLine:not(:empty)::before,
+.LineTextLine:not(:empty)::after {
+    margin-left: .25em;
+}
