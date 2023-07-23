@@ -1,0 +1,11 @@
+.bgColor{
+    background-color:black;
+    text-decoration: none;
+    /* background-image: url('https://live.staticflickr.com/7343/10121083423_a94fd8bb07_b.jpg'); */
+    /* background-image: url('https://images.pexels.com/photos/934067/pexels-photo-934067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+    /* background-image: url('https://images.pexels.com/photos/1420769/pexels-photo-1420769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+    background-image: url('https://images.pexels.com/photos/1420769/pexels-photo-1420769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

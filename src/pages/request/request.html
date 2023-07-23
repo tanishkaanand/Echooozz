@@ -1,0 +1,75 @@
+import React from 'react'
+import './request.css'
+
+const Request = () => {
+return (
+<form onsubmit="sendEmail(); reset; return false">
+    <div className='request'>
+        <section className="main-request">
+            <h1 className="title-request">Request A Song</h1>
+            <form action="#">
+                <div className="main-box">
+                    <div className="input-box">
+                        <span className="text">Name</span>
+                        <input type="text" placeholder="Please enter your Name" required="" />
+                    </div>
+                    <div className="input-box">
+                        <span className="text">Email</span>
+                        <input type="email" placeholder="Email" required="" />
+                    </div>
+                    <div className="input-box">
+                        <span className="text">Message</span>
+                        <input type="Message" placeholder="Song Request" required="" />
+                    </div>
+                </div>
+                <div className="container-request">
+                    <input type="radio" name="gender" id="circle-1" />
+                    <input type="radio" name="gender" id="circle-2" />
+                    <input type="radio" name="gender" id="circle-3" />
+                    <span className="gender">Gender</span>
+                    <div className="category">
+                        <label htmlFor="circle-1">
+                            <span className="circle one" />
+                            <span className="male">Male</span>
+                        </label>
+                        <label htmlFor="circle-2">
+                            <span className="circle two" />
+                            <span className="male">Female</span>
+                        </label>
+                        <label htmlFor="circle-3">
+                            <span className="circle three" />
+                            <span className="male">Other</span>
+                        </label>
+                    </div>
+                </div>
+                <div className="btn">
+                    <input onSubmittype="submit" defaultValue="Register" />
+                </div>
+            </form>
+        </section>
+
+        <scrpit>
+            function sendEmail(){
+            Email.send({
+            Host: "smtp.gmail.com",
+            Username: "tanishkaanandmusic@gmail.com",
+            Password: "Tanu18@123",
+            To: 'tanishkaanandmusic@gmail.com',
+            From: "document.getElementById("email").value",
+            Subject: "New Song Request Made",
+            Body: "Name: " + document.getElementById("text").value
+                    + <br/> + "Email : " + document.getElementById("email").value
+                    + <br/> + "Message : " + document.getElementById("Message").value
+
+            }).then(
+            message => alert("Song Request Made Successfully")
+            );
+            }
+        </scrpit>
+
+    </div>
+</form>
+)
+}
+
+export default Request

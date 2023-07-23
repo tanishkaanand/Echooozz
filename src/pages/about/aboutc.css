@@ -1,0 +1,142 @@
+.about-section{
+    width: 100%;
+    min-height: 80vh;
+    /* background-image: url('https://th.bing.com/th/id/R.2f33eccb016699f0575049cc457c6385?rik=jQFI7PQy2UVY9g&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fMQy6rhu.jpg&ehk=KzK%2fyg3TTOHhej%2f9yu%2b8pJrL9%2fKSIfdTULPLUQ%2fiB6o%3d&risl=&pid=ImgRaw&r=0'); */
+    /* margin:0px;
+    padding: 0px;
+    box-sizing: border-box; */
+}
+
+.journey{
+    background-color: black;
+}
+
+.about-me{
+    background-color: black;
+}
+
+.container-about{
+    width: 80%;
+    display: block;
+    margin:auto;
+    padding-top: 100px;
+}
+
+.content-section{
+    float: left;
+    width:55%;
+}
+
+.image-section{
+    float: right;
+    width:30%;
+}
+
+.image-section img{
+    width:100%;
+    height: auto;
+}
+
+.content-section .title-about{
+    /* text-transform: uppercase; */
+    font-size: 40px;
+}
+
+.content-section .content h3{
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 21px;
+}
+
+.content-section .content p{
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.content-section .content .button-about{
+    margin-left: 220px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.content-section .content .button-about a{
+    background-color: #3d3d3d;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.content-section .content .button-about a:hover{
+    background-color: #a52a2a;
+    color: #fff;
+}
+
+.content-section .social{
+    margin-left: 230px;
+    margin-top: 40px;
+}
+
+.content-section .social i{
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+
+.content-section .social i:hover{
+    color: #3d3d3d;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .content-section{
+        float: none;
+        width:100%;
+        display: block;
+        margin: auto;
+    }
+
+    .image-section{
+        float: none;
+        width:100%;
+    }
+
+    .image-section img{
+        width:100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .content-section .title{
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .content-section .content .button-about{
+        text-align: center;
+    }
+
+    .content-section .content .button-about a{
+        padding: 9px 30px;
+    }
+
+    .content-section .social{
+        text-align: center;
+    }
+}
+
+.phool{
+    background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2013/02/08/37301/30fcea75dea2db4fcf13ad85a0f0ed47.jpg');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+}

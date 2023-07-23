@@ -1,0 +1,282 @@
+/* 
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+} */
+.request {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://img.freepik.com/premium-photo/pink-flowers-black-background-with-black-background_853645-432.jpg');
+    background-size: cover;
+    background-position: center;
+    /* padding: 30px; */
+    padding-left: 30%;
+}
+
+.main-request:hover {
+    /* animation: pulsate 1.5s infinite alternate; */
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #fff,
+        0 0 0.8rem #fff,
+        0 0 2.8rem #fffe,
+        inset 0 0 1.3rem #fff;
+}
+
+.main-request {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 40px;
+    border-radius: 1rem;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.title-request {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.title-request::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -8px;
+    height: 3px;
+    width: 60px;
+    background: #ff328e;
+}
+
+form .main-box {
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: space-between;
+    margin: 10px 0 8px 0;
+}
+
+form .main-box .input-box {
+    width: calc(100% / 2 - 15px);
+    margin: 15px 0;
+}
+
+form .main-box .input-box input {
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, .1);
+    color: black;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, .09);
+    padding-left: 17px;
+    font-size: 1rem;
+    transition: all .40s ease;
+}
+
+.main-box .input-box .text {
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+    font-weight: 500;
+}
+
+form .main-box .input-box input:focus,
+form .main-box .input-box input:valid {
+    border-color: black;
+}
+
+form .container-request .gender {
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+}
+
+form .container-request .category {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 10px 0;
+    color: black;
+}
+
+.container-request .category label {
+    display: flex;
+    align-items: center;
+}
+
+.container-request .category .circle {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #ac0bdd;
+    margin-right: 8px;
+    border: 4px solid transparent;
+}
+
+#circle-1:checked~.category label .one,
+#circle-2:checked~.category label .two,
+#circle-3:checked~.category label .three {
+    border-color: rgb(219, 234, 253);
+}
+
+form input[type="radio"] {
+    display: none;
+}
+/* 
+form .glow-on-hover {
+    height: 50px;
+    margin: 20px 0;
+}
+
+form .glow-on-hover input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background: rgba(255, 255, 255, .1);
+    color: black;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .40s ease;
+}
+
+form .btn input:hover {
+    background: #ff328e;
+} */
+
+@media (max-width: 640px) {
+    .main {
+        max-width: 100%;
+    }
+
+    form .main-box .input-box {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    form .container-request .category {
+        width: 100%;
+    }
+
+    form .main-box {
+        max-height: 430px;
+        overflow-y: scroll;
+    }
+}
+
+.glow-on-hover {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.button-31 {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 5px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 30%;
+}
+
+.button-31:hover,
+.button-31:focus {
+  opacity: .75;
+}
