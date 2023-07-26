@@ -1,10 +1,7 @@
 # The-Soulful-Echo
 Enjoy Soulful Piano Songs
 
-# Live Link: https://the-soulful-echo.netlify.app/
-
-# Website Demo
-https://drive.google.com/file/d/17IsFr-h9h1m_oxMI_ZvNwbeAqf129sxQ/view?usp=sharing
+# Live Link : https://the-soulful-echo.netlify.app/
 
 # Home Page
 ![2023-05-31 (21)](https://github.com/tanishkaanand/The-Soulful-Echo/assets/77928058/8d4d85a6-c4cb-4fa5-9964-fe07bbd2dd7b)
@@ -55,3 +52,5 @@ https://drive.google.com/file/d/17IsFr-h9h1m_oxMI_ZvNwbeAqf129sxQ/view?usp=shari
 # Footer
 ![2023-05-31 (40)](https://github.com/tanishkaanand/The-Soulful-Echo/assets/77928058/afd6c6b7-03f1-4fd9-b6cb-c639a9c64a58)
 
+# Website Demo
+https://drive.google.com/file/d/17IsFr-h9h1m_oxMI_ZvNwbeAqf129sxQ/view?usp=sharing
